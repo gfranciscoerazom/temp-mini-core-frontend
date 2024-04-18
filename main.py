@@ -9034,9 +9034,6 @@ def read_root(
         }
     ]
 
-    print(f"{descripcion=}, {fecha=}, {latitud=}, {
-          longitud=}, {publicacionId=}, {tipo=}")
-
     if descripcion:
         response = list(filter(lambda x: descripcion.casefold()
                         in x["descripcion"].casefold(), response))
